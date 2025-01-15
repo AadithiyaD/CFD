@@ -1,0 +1,2 @@
+Learning CFD from the repository - Barba, Lorena A., and Forsyth, Gilbert F. (2018). CFD Python: the 12 steps to Navier-Stokes equations. Journal of Open Source Education, 1(9), 21
+https://github.com/barbagroup/CFDPython
