@@ -58,3 +58,6 @@ plt.xlim([0, 2*np.pi])
 plt.ylim([0, 10])
 plt.legend()
 plt.show()
+
+
+# * Side note: Manually typing out the discretization of the equations makes me realize how useful a function to do this would be
