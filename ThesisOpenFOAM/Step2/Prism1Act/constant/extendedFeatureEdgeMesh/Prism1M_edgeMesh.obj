@@ -1,0 +1,31 @@
+# Wavefront OBJ file written 2025-03-09T15:49:03
+o Prism1M_edgeMesh
+
+# points : 8
+# lines  : 12
+
+# <points count="8">
+v -0.04 0.04 0.16
+v -0.04 0.04 0
+v -0.04 -0.04 0
+v -0.04 -0.04 0.16
+v 0.04 -0.04 0
+v 0.04 -0.04 0.16
+v 0.04 0.04 0
+v 0.04 0.04 0.16
+# </points>
+
+# <edges count="12">
+l 1 2
+l 2 3
+l 3 4
+l 4 1
+l 3 5
+l 5 6
+l 6 4
+l 5 7
+l 7 8
+l 8 6
+l 7 2
+l 1 8
+# </edges>
