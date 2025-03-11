@@ -1,0 +1,21 @@
+{
+  "file-series-version" : "1.0",
+  "files" : [
+    { "name" : "Prism1ActC_00000025.vtm", "time" : 25 },
+    { "name" : "Prism1ActC_00000050.vtm", "time" : 50 },
+    { "name" : "Prism1ActC_00000075.vtm", "time" : 75 },
+    { "name" : "Prism1ActC_00000100.vtm", "time" : 100 },
+    { "name" : "Prism1ActC_00000125.vtm", "time" : 125 },
+    { "name" : "Prism1ActC_00000150.vtm", "time" : 150 },
+    { "name" : "Prism1ActC_00000175.vtm", "time" : 175 },
+    { "name" : "Prism1ActC_00000200.vtm", "time" : 200 },
+    { "name" : "Prism1ActC_00000225.vtm", "time" : 225 },
+    { "name" : "Prism1ActC_00000250.vtm", "time" : 250 },
+    { "name" : "Prism1ActC_00000275.vtm", "time" : 275 },
+    { "name" : "Prism1ActC_00000300.vtm", "time" : 300 },
+    { "name" : "Prism1ActC_00000325.vtm", "time" : 325 },
+    { "name" : "Prism1ActC_00000350.vtm", "time" : 350 },
+    { "name" : "Prism1ActC_00000375.vtm", "time" : 375 },
+    { "name" : "Prism1ActC_00000400.vtm", "time" : 400 }
+  ]
+}
