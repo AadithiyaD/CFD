@@ -4,8 +4,6 @@ I now have a better understanding of snappyHexMesh, but adding layers seems to b
 
 Next steps are to finish adding prism layers, and set up inlet conditions
 
-Update1: Figured out how to implement a velocity profile, and how to initialize it with potentialFoam. Also realized that its probably better to use the motorBike tutorial as a template, rahter tahn the windFlowAroundBuildings, because the former is more verbosely commented
+Update1: Figured out how to implement a velocity profile, and how to initialize it with potentialFoam. Also realized that its probably better to use the motorBike tutorial as a template, rahter than the windFlowAroundBuildings, because the former is more verbosely commented
 
 Next steps: implement roughness length
-
-Update2: todo: roughness length, epsilon and k profiles, then GCI 
