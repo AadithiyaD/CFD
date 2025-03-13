@@ -22,13 +22,13 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         400;
+endTime         100;
 
 deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   50;
+writeInterval   25;
 
 purgeWrite      0;
 
@@ -46,7 +46,7 @@ runTimeModifiable true;
 
 functions
 {
-    #include "ensightWrite"
+    // #include "ensightWrite"
     #include "vtkWrite"
 
     // Demonstrate runTimePostProcessing

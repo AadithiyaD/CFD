@@ -47,7 +47,7 @@ castellatedMeshControls
     {
         Prism1M
         {
-            level (3 3);
+            level (2 3);
             patchInfo { type wall; }
         }
     }
@@ -76,7 +76,7 @@ addLayersControls
     {
         "Prism1M"
         {
-            nSurfaceLayers 2;
+            nSurfaceLayers 1;
         }
     }
 

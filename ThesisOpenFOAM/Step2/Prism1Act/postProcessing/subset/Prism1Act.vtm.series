@@ -1,0 +1,9 @@
+{
+  "file-series-version" : "1.0",
+  "files" : [
+    { "name" : "Prism1Act_00000025.vtm", "time" : 25 },
+    { "name" : "Prism1Act_00000050.vtm", "time" : 50 },
+    { "name" : "Prism1Act_00000075.vtm", "time" : 75 },
+    { "name" : "Prism1Act_00000100.vtm", "time" : 100 }
+  ]
+}

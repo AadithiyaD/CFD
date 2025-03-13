@@ -16,33 +16,40 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-4
+5
 (
     inlet
     {
         type            patch;
         nFaces          1755;
-        startFace       309105;
+        startFace       1221213;
     }
     outlet
     {
         type            patch;
         nFaces          1755;
-        startFace       310860;
+        startFace       1222968;
     }
     ground
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          2700;
-        startFace       312615;
+        nFaces          8356;
+        startFace       1224723;
     }
     frontAndBack
     {
         type            symmetry;
         inGroups        1(symmetry);
         nFaces          7380;
-        startFace       315315;
+        startFace       1233079;
+    }
+    Prism1M
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          3572;
+        startFace       1240459;
     }
 )
 

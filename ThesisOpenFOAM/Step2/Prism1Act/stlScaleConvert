@@ -1,0 +1,9 @@
+#!/bin/sh
+
+surfaceConvert Prism1.stl Prism1M.stl -clean -scale 0.001 
+
+mkdir constant/triSurface
+
+mv Prism1M.stl constant/triSurface/
+
+#-------------------------------------------------------------------
