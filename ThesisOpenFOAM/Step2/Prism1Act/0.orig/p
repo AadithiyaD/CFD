@@ -27,11 +27,21 @@ boundaryField
 
     outlet
     {
-        type            totalPressure;
-        p0              uniform 0;
+        type            uniformFixedValue;
+        uniformValue    constant 0;
     }
 
-    wall
+    ground
+    {
+        type            zeroGradient;
+    }
+
+    frontAndBack
+    {
+        type            symmetry;
+    }
+
+    Top
     {
         type            zeroGradient;
     }

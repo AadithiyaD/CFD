@@ -20,6 +20,8 @@ internalField   uniform 0;
 
 boundaryField
 {
+    #include            "include/ABLConditions"
+
     inlet
     {
         type            calculated;
@@ -32,11 +34,32 @@ boundaryField
         value           uniform 0;
     }
 
-    wall
+    ground
     {
-        type            nutkWallFunction;
+        type            atmNutkWallFunction;
+        kappa           $kappa;
+        Cmu             $Cmu;
+        z0              $z0;
+        value           uniform 0.0;
+    }
+
+    Top
+    {
+        type            calculated;
         value           uniform 0;
     }
+
+    frontAndBack
+    {
+        type            symmetry;
+    }
+
+    Prism1M
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+
 
     #includeEtc "caseDicts/setConstraintTypes"
 }

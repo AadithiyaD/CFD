@@ -14,32 +14,61 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-kInlet          1.5;   // approx k = 1.5*(I*U)^2 ; I = 0.1
 
 dimensions      [0 2 -2 0 0 0 0];
 
-internalField   uniform $kInlet;
+internalField   uniform 1.5;
 
 boundaryField
 {
     inlet
     {
-        type            fixedValue;
-        value           uniform $kInlet;
+        type       fixedProfile;
+        profile    csvFile;
+
+        profileCoeffs
+        {
+            nHeaderLine         0;          // Number of header lines
+            refColumn           0;          // Reference column index
+            componentColumns    (1);    // Component column indices
+            separator           ",";        // Optional (defaults to ",")
+            mergeSeparators     no;         // Merge multiple separators
+            file                "$FOAM_CASE/constant/mengKProf.csv";  // name of csv data file
+            outOfBounds         clamp;      // Optional out-of-bounds handling
+            interpolationScheme linear;     // Optional interpolation scheme
+        }
+        direction        (0 0 1);
+        origin           0;
+    }
+
+    ground
+    {
+        type            kqRWallFunction;
+        value           uniform 0.0;
+    }
+
+    Top
+    {
+        type            zeroGradient;
+    }
+
+    frontAndBack
+    {
+        type            symmetry;
     }
 
     outlet
     {
         type            inletOutlet;
-        inletValue      uniform $kInlet;
-        value           uniform $kInlet;
+        inletValue      $internalField;
+        value           $internalField;
     }
 
-    wall
+    Prism1M
     {
-        type            kqRWallFunction;
-        value           uniform $kInlet;
+        type            zeroGradient;
     }
+
 
     #includeEtc "caseDicts/setConstraintTypes"
 }

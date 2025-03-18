@@ -1,4 +1,9 @@
 #!/bin/sh
+. ${WM_PROJECT_DIR:?}/bin/tools/RunFunctions        # Tutorial run functions
+#------------------------------------------------------------------------------
+
+
+restore0Dir
 
 surfaceConvert Prism1.stl Prism1M.stl -clean -scale 0.001 
 

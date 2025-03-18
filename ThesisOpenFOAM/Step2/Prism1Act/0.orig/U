@@ -44,11 +44,22 @@ boundaryField
 
     outlet
     {
-        type            pressureInletOutletVelocity;
-        value           uniform (0 0 0);
+        type            inletOutlet;
+        inletValue      uniform (0 0 0);
+        value           $internalField;
     }
 
-    wall
+    ground
+    {
+        type            noSlip;
+    }
+
+    frontAndBack // Sides
+    {
+        type            symmetry;
+    }
+
+    Top
     {
         type            noSlip;
     }

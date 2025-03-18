@@ -95,6 +95,14 @@ boundary
         (
             (0 4 5 1)
             (3 2 6 7)
+        );
+    }
+
+    Top
+    {
+        type symmetry;
+        faces
+        (
             (4 7 6 5)
         );
     }

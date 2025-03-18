@@ -4,6 +4,7 @@
   <vtkMultiBlockDataSet>
     <Block name='boundary'>
       <DataSet name='ground' file='boundary/ground.vtp' />
+      <DataSet name='Top' file='boundary/Top.vtp' />
       <DataSet name='Prism1M' file='boundary/Prism1M.vtp' />
     </Block>
   </vtkMultiBlockDataSet>

@@ -16,7 +16,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-5
+6
 (
     inlet
     {
@@ -41,8 +41,15 @@ FoamFile
     {
         type            symmetry;
         inGroups        1(symmetry);
-        nFaces          7380;
+        nFaces          4680;
         startFace       1233079;
+    }
+    Top
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          2700;
+        startFace       1237759;
     }
     Prism1M
     {

@@ -7,11 +7,7 @@ restore0Dir
 
 ./stlScaleConvert
 
-runApplication surfaceFeatureExtract
-
-runApplication blockMesh
-
-runApplication snappyHexMesh -overwrite
+./mesh
 
 potentialFoam
 
